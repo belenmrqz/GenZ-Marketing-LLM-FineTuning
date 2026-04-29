@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.ipynb_checkpoints
+.env
+# Aquí guardaremos el modelo final para no saturar github
+model_output/
