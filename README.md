@@ -14,6 +14,25 @@
 
 ---
 
+## 🗂️ Estructura del Proyecto
+
+```
+AJUSTEFINO-GENZ/
+├── genz-adapter/                  # Pesos entrenados del modelo ajustado
+│   ├── adapter_config.json        # Configuración de los adaptadores LoRA
+│   └── adapter_model.safetensors  # Pesos del adaptador (se acopla al modelo base)
+├── baseline_test.py               # Pruebas con el modelo base sin ajustar
+├── finetuned_test.py              # Pruebas con el modelo ya ajustado
+├── fineturning_genz.ipynb         # Notebook de Google Colab con el entrenamiento completo
+├── genz_dataset.jsonl             # Dataset propio en formato conversacional (15 ejemplos)
+├── README.md                      # Memoria técnica del proyecto
+├── requirements.txt               # Librerías necesarias para ejecutar el proyecto
+└── upload_dataset.py              # Script para subir el dataset a Hugging Face
+```
+
+---
+
+
 ## 1. Planteamiento del Caso de Negocio
 
 La famosa empresa **GenZ-Compay** contacta con nosotros a partir de un problema que está dificultando el crecimiento de la empresa y estanca el trabajo y la productividad del mismo: sus LLMs tradicionales generan textos para redes sociales muy robóticos y aburridos sin cumplir su verdadero objetivo, acercarse al público que lo consume con mensajes cercanos y que concuerden con los intereses de los espectadores y posibles clientes.
